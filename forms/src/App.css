@@ -23,24 +23,13 @@ body {
   text-align: center;
   background-color: purple;
   padding: 32px;
-  letter-spacing: 2px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  padding-top: 100px
-
+  padding-top: 50px;
 }
 
-.quote-form-component{
-  flex-basis: 50%;
 
-}
-
-.quote-component {
-  /* margin-right: 100px ; */
-  flex-basis: 50%;
- 
-
-}
 
 
 .quote-list {
@@ -78,7 +67,7 @@ form {
   -moz-border-radius: 20px 20px 20px 20px;
   -webkit-border-radius: 20px 20px 20px 20px;
   border: 0px solid #000000;
-  margin-left: 100px;
+  /* margin-left: 100px; */
 }
 
 form h1 {
@@ -123,4 +112,19 @@ label {
   color: rgb(156, 4, 156);
   font-weight: bolder;
 
+}
+
+@media(min-width: 1000px) {
+  .App {
+    flex-direction: row;
+  }
+
+  .quote-form-component{
+    flex-basis: 40%;
+  
+  }
+  
+  .quote-component {
+    flex-basis: 40%;
+  } 
 }
