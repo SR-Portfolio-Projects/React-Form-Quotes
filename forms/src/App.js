@@ -44,7 +44,7 @@ function App() {
       </div>
       
       <div className = 'quote-component'>
-            <h1>Quotes</h1>
+            
             <Quotes quotes={quotes} addNewQuote = { addNewQuote} />
       </div>
     </div>

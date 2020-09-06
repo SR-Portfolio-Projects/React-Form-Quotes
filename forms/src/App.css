@@ -25,12 +25,13 @@ body {
   padding: 32px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   padding-top: 50px;
 }
 
 
-
+.qutoes-section {
+  margin-top: 7rem;
+}
 
 .quote-list {
   display: flex;
@@ -116,7 +117,13 @@ label {
 
 @media(min-width: 1000px) {
   .App {
+    justify-content: space-between;
+
     flex-direction: row;
+  }
+
+  .qutoes-section {
+    margin-top: 0;
   }
 
   .quote-form-component{
